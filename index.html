@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="https://cdn.tailwindcss.com?plugins=typography,line-clamp"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Inter', sans-serif] bg-[aliceblue] flex items-center justify-center h-screen">
+    <div class="container bg-[#f9faf9] rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.3)] w-96" >
+        <h1 class="text-center text-2xl font-bold m-8">login/Register</h1>
+        <form action="" class="px-10 py-8">
+            <div class="form-control mb-1 relative "  >
+                <label for="Username" class="block mb-1">Username</label>
+                <input class="w-full px-3 py-2 text-base border-2 border-[#a7a1a0]
+                 focus:outline-none focus:border-2 focus:border-[#1d1a1a] rounded" type="text" name="" id="Username">
+                <i class="fa fa-check absolute right-3 text-[#3aca15] bottom-8 invisible"></i>
+                <i class="fa fa-close absolute right-3 text-[#ec5a36] bottom-8 invisible"></i>
+                <small class="block text-[#ec5a36] invisible">Error message</small>
+            </div>
+            <div class="form-control mb-1 relative"  >
+                <label for="Email" class="block mb-1">Email</label>
+                <input class="w-full px-3 py-2 text-base border-2 border-[#a7a1a0]
+                 focus:outline-none focus:border-2 focus:border-[#1d1a1a] rounded" type="text" name="" id="Email">
+                <i class="fa fa-check absolute right-3 text-[#3aca15] bottom-8 invisible"></i>
+                <i class="fa fa-close absolute right-3 text-[#ec5a36] bottom-8 invisible"></i>
+                <small class="block text-[#ec5a36] invisible">Error message</small>
+            </div>
+            <div class="form-control mb-1 relative"  >
+                <label for="Password" class="block mb-1">Password</label>
+                <input class="w-full px-3 py-2 text-base border-2 border-[#a7a1a0]
+                 focus:outline-none focus:border-2 focus:border-[#1d1a1a] rounded" type="password" name="" id="Password">
+                <i class="fa fa-check absolute right-3 text-[#3aca15] bottom-8 invisible"></i>
+                <i class="fa fa-close absolute right-3 text-[#ec5a36] bottom-8 invisible"></i>
+                <small class="block text-[#ec5a36] invisible">Error message</small>
+            </div>
+            <div class="form-control mb-1 relative"  >
+                <label for="confirmPassword" class="block mb-1">confirmPassword</label>
+                <input class="w-full px-3 py-2 text-base border-2 border-[#a7a1a0]
+                 focus:outline-none focus:border-2 focus:border-[#1d1a1a] rounded" type="password" name="" id="confirmPassword">
+                <i class="fa fa-check absolute right-3 text-[#3aca15] bottom-8 invisible "></i>
+                <i class="fa fa-close absolute right-3 text-[#ec5a36] bottom-8 invisible"></i>
+                <small class="block text-[#ec5a36] invisible">Error message</small>
+            </div>
+            <button type="submit" class="bg-[#ff7e33] w-full py-2 text-white text-base rounded">Submit</button>
+
+        </form>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
